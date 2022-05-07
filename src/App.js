@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-
-import HomePage from './components/HomePage';
 import './App.css';
-
+import RouteSwitch from './components/RouteSwitch';
 
 
 function App() {
   return (
-    <div>
-      <HomePage/>
-    </div>
+      <RouteSwitch/>
   );
 }
 
