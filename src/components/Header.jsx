@@ -11,7 +11,7 @@ return (
             <div className='item'><p onClick={() => {nav(`/`)}}>Book Store</p></div>
             <div className='item'><p onClick={() => {nav(`/shop`)}}>Shop</p></div>
             <div className='search item'  ><SearchIcon onClick={props.toggleSearch}/></div>
-            <div className='cart item'><ShoppingCartIcon/></div>
+            <div className='cart item'><ShoppingCartIcon onClick={props.toggleCart} /></div>
     </div>
     )
 }

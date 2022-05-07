@@ -1,0 +1,26 @@
+
+.cart-box {
+    text-align: center;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    /* left: 0; */
+    bottom: 0;
+}
+
+h2 {
+    color: black;
+}
+
+span {
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    top: 23px;
+    right: 370px;
+    font-size: 20px;
+}

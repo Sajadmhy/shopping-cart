@@ -2,14 +2,16 @@
     background: rgba(0, 0, 0, 0.5) url('../../images/photo-1559825481-12a05cc00344.jpeg');
     background-size:cover;
     background-blend-mode: multiply ;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
 }
 
 .main {
     margin:0 50px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
 }
 
 .product {
