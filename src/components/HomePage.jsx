@@ -19,7 +19,7 @@ return (
             <p>Books available for preorder.</p>
             <button>SHOP NOW</button>
         </div>
-        <div className='search-display' style={{display: showSearch ? "block" : "none"}}><Search/></div>
+        <div className='search-display' style={{display: showSearch ? "block" : "none"}}><Search toggleSearch={toggleSearch}/></div>
     </div>
 );
 
