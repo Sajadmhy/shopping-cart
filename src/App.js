@@ -1,12 +1,15 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+
 import HomePage from './components/HomePage';
-import Search from './components/Search';
 import './App.css';
+
+
 
 function App() {
   return (
     <div>
       <HomePage/>
-      {/* <Search/> */}
     </div>
   );
 }
