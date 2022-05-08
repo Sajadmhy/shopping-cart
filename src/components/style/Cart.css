@@ -12,7 +12,7 @@
     bottom: 0;
 }
 
-h2 {
+h2, p {
     color: black;
 }
 
@@ -24,3 +24,11 @@ span {
     right: 370px;
     font-size: 20px;
 }
+
+.order-close {
+    background: transparent;
+    border-style: none;
+    width: 20px;
+    height: 20px;
+}
+
