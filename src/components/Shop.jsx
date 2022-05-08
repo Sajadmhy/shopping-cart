@@ -45,9 +45,20 @@ const toggleCart = () => {
 };
 
 const addOrder = (event) => {
+    // console.log(event.target.index);
     setOrder(
         order =  [...order ,event.target.id]
     );
+};
+
+
+const handleRemove = (e) => {
+    const number = e.target.id;
+    console.log(number);
+    
+    setOrder(
+        order = order.filter((item,index) => +index !== +number)
+        );
 };
 
 
@@ -60,7 +71,7 @@ return (
             <div className='product'><Product src={data[2].src} name={data[2].name} author={data[2].author} price={data[2].price} addOrder={addOrder} /></div>
         </div>
         <div className='search-display' style={{display: showSearch ? "block" : "none"}}><Search toggleSearch={toggleSearch}/></div>
-        <div className='cart-display' style={{display: showCart ? "block" : "none"}}><Cart toggleCart={toggleCart} order={order}/></div>
+        <div className='cart-display' style={{display: showCart ? "block" : "none"}}><Cart toggleCart={toggleCart} order={order} handleRemove={handleRemove} /></div>
     </div>
 );
 
