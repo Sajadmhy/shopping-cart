@@ -25,6 +25,10 @@ span {
     font-size: 20px;
 }
 
+li {
+    display: block;
+}
+
 .order-close {
     background: transparent;
     border-style: none;

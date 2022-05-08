@@ -18,16 +18,17 @@
 }
 
 
-h2 {
+.title {
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
+    color: white;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
 }
 
-button {
+.shop-btn {
     height: 40px;
     width: 150px;
     cursor: pointer;
@@ -36,7 +37,7 @@ button {
     color: black;
 }
 
-button:hover {
+.shop-btn:hover {
     box-shadow: gray 2px 2px 0;
 }
 

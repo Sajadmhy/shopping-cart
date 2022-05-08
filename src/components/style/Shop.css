@@ -17,3 +17,12 @@
 .product {
     flex: auto;
 }
+
+button {
+    color: black;
+    border-style: solid;
+}
+
+button:hover {
+    box-shadow: gray 2px 2px 0;
+}
