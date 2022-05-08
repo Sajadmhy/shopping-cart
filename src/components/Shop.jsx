@@ -19,14 +19,14 @@ const data = [
     },
     {
         src: hobbit,
-        name: "Hobbit",
+        name: "The Hobbit",
         author: "J.J.R. Tolkien",
         price: "$30",
     },
     {
         src: slaughter,
-        name: 'Slaughterhouse-5',
-        author: 'Kort Vonnegut',
+        name: 'Slaughter house-5',
+        author: 'Kurt Vonnegut',
         price:'$40',
     },
 ];

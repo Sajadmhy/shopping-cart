@@ -7,7 +7,7 @@ return (
             <img src={props.src} alt={props.name}/>
             <p>{props.name}</p>
             <p>{props.author}</p>
-            <p>{props.price}</p>
+            <p>{props.price}<button>Add</button></p>
     </div>
     )
 }
