@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.41a3f089.css",
-    "main.js": "/shopping-cart/static/js/main.c41ece8d.js",
-    "static/media/old-library-book.webp": "/shopping-cart/static/media/old-library-book.25ff7a4c1489dc9f4c4c.webp",
-    "static/media/slaughterhouse-5.jpg": "/shopping-cart/static/media/slaughterhouse-5.d09bc5043e56704a5026.jpg",
-    "static/media/harry-potter.jpg": "/shopping-cart/static/media/harry-potter.2d8bbd8f9dc8e0d30925.jpg",
-    "static/media/photo-1559825481-12a05cc00344.jpeg": "/shopping-cart/static/media/photo-1559825481-12a05cc00344.19e0f3197aeb1089e925.jpeg",
-    "static/media/hobbit.jpg": "/shopping-cart/static/media/hobbit.624ec663f1706f72d0b0.jpg",
-    "index.html": "/shopping-cart/index.html",
-    "main.41a3f089.css.map": "/shopping-cart/static/css/main.41a3f089.css.map",
-    "main.c41ece8d.js.map": "/shopping-cart/static/js/main.c41ece8d.js.map"
+    "main.css": "/static/css/main.306c4d1a.css",
+    "main.js": "/static/js/main.b4878a60.js",
+    "static/media/old-library-book.webp": "/static/media/old-library-book.25ff7a4c1489dc9f4c4c.webp",
+    "static/media/slaughterhouse-5.jpg": "/static/media/slaughterhouse-5.d09bc5043e56704a5026.jpg",
+    "static/media/harry-potter.jpg": "/static/media/harry-potter.2d8bbd8f9dc8e0d30925.jpg",
+    "static/media/photo-1559825481-12a05cc00344.jpeg": "/static/media/photo-1559825481-12a05cc00344.19e0f3197aeb1089e925.jpeg",
+    "static/media/hobbit.jpg": "/static/media/hobbit.624ec663f1706f72d0b0.jpg",
+    "index.html": "/index.html",
+    "main.306c4d1a.css.map": "/static/css/main.306c4d1a.css.map",
+    "main.b4878a60.js.map": "/static/js/main.b4878a60.js.map"
   },
   "entrypoints": [
-    "static/css/main.41a3f089.css",
-    "static/js/main.c41ece8d.js"
+    "static/css/main.306c4d1a.css",
+    "static/js/main.b4878a60.js"
   ]
 }
