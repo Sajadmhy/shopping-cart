@@ -13,6 +13,8 @@ export default function Cart(props) {
             </li>
             )}
           </div>
+          <hr/>
+          <div className='final-price'> Final Price: ${props.finalPrice}</div>
         </div>
     )
 }

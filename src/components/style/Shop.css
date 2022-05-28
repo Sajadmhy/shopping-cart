@@ -2,16 +2,15 @@
     background: rgba(0, 0, 0, 0.5) url('../../images/photo-1559825481-12a05cc00344.jpeg');
     background-size:cover;
     background-blend-mode: multiply ;
-    background-repeat:repeat;
+    background-repeat:no-repeat;
 }
 
 .main {
     margin:0 50px;
-    /* height: 100vh; */
+    padding: 0 0 50px 0;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-
 }
 
 .product {
@@ -25,4 +24,10 @@ button {
 
 button:hover {
     box-shadow: gray 2px 2px 0;
+}
+
+.final-price {
+    color: black;
+    text-align: left;
+    padding: 30px;
 }

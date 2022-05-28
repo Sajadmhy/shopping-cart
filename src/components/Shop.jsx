@@ -37,6 +37,7 @@ const [showSearch, setShowSearch] = useState(false);
 const [showCart, setShowCart] = useState(false);
 const [order, setOrder] = useState([]);
 const [isEmpty, setIsEmpty] = useState(true);
+const [finalPrice, setFinalPrice] = useState(0);
 
 const toggleSearch = () => {
     setShowSearch(s => !s)
@@ -60,6 +61,14 @@ useEffect(() => {
     }
 }, [order])
 
+useEffect(() => {
+    let sum = 0;
+    for (let i=0; i < order.length; i++){
+        sum += parseInt(order[i][1]);
+    }
+    setFinalPrice(sum)
+},[order])
+
 const handleRemove = (e) => {
     const number = e.target.id;
     console.log(number);
@@ -80,7 +89,7 @@ return (
         </div>
         <div className='search-display' style={{display: showSearch ? "block" : "none"}}><Search toggleSearch={toggleSearch}/></div>
         <div className='cart-display' style={{display: showCart ? "block" : "none"}}><Cart toggleCart={toggleCart} 
-        order={order} handleRemove={handleRemove} isEmpty={isEmpty}/></div>
+        order={order} handleRemove={handleRemove} isEmpty={isEmpty} finalPrice={finalPrice}/></div>
     </div>
 );
 
