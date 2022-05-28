@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 import Header from './Header';
 import Search from './Search';
 import Product from './Product';
@@ -15,19 +15,19 @@ const data = [
         src: harry,
         name: `Harry Potter`,
         author: `J.K. Rowling`,
-        price: `$20`,
+        price: 20,
     },
     {
         src: hobbit,
         name: "The Hobbit",
         author: "J.J.R. Tolkien",
-        price: "$30",
+        price: 30,
     },
     {
         src: slaughter,
         name: 'Slaughter house-5',
         author: 'Kurt Vonnegut',
-        price:'$40',
+        price:40,
     },
 ];
 
@@ -35,7 +35,8 @@ export default function Shop() {
 
 const [showSearch, setShowSearch] = useState(false);
 const [showCart, setShowCart] = useState(false);
-let [order, setOrder] = useState([]);
+const [order, setOrder] = useState([]);
+const [isEmpty, setIsEmpty] = useState(true);
 
 const toggleSearch = () => {
     setShowSearch(s => !s)
@@ -45,19 +46,26 @@ const toggleCart = () => {
 };
 
 const addOrder = (event) => {
-    // console.log(event.target.index);
     setOrder(
-        order =  [...order ,event.target.id]
+        [...order ,[event.target.id, event.target.name]]
     );
 };
 
+
+useEffect(() => {
+    if (order.length === 0) {
+        setIsEmpty(true);
+    } else {
+        setIsEmpty(false);
+    }
+}, [order])
 
 const handleRemove = (e) => {
     const number = e.target.id;
     console.log(number);
     
     setOrder(
-        order = order.filter((item,index) => +index !== +number)
+        order.filter((item,index) => +index !== +number)
         );
 };
 
@@ -71,7 +79,8 @@ return (
             <div className='product'><Product src={data[2].src} name={data[2].name} author={data[2].author} price={data[2].price} addOrder={addOrder} /></div>
         </div>
         <div className='search-display' style={{display: showSearch ? "block" : "none"}}><Search toggleSearch={toggleSearch}/></div>
-        <div className='cart-display' style={{display: showCart ? "block" : "none"}}><Cart toggleCart={toggleCart} order={order} handleRemove={handleRemove} /></div>
+        <div className='cart-display' style={{display: showCart ? "block" : "none"}}><Cart toggleCart={toggleCart} 
+        order={order} handleRemove={handleRemove} isEmpty={isEmpty}/></div>
     </div>
 );
 
